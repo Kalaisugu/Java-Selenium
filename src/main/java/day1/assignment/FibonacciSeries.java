@@ -1,4 +1,10 @@
-package day1.assignments;
+package day1.assignment
+
+
+
+
+
+;
 
 public class FibonacciSeries {
 	
@@ -21,6 +27,46 @@ public class FibonacciSeries {
 	
 	public static void main(String[] args) {
 		
+		int range=8,firstnum=0;
+				int secondnum=1,sum=0;
+		
+		for(int i=1;i<=range;i++)
+			
+		{
+			System.out.println("firstnum="+firstnum);
+			sum=firstnum+secondnum;
+			firstnum=secondnum;
+			secondnum=sum;
+			
+			
+		}
+		
+	}
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		// initialize 3 int variables (Tip: range & firstNum, secNum in the series)
 		
 		// Iterate from 1 to the range
@@ -35,6 +81,6 @@ public class FibonacciSeries {
 			
 		
 
-	}
+	
 
-}
+

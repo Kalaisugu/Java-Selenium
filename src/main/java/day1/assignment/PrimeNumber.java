@@ -22,17 +22,28 @@ public class PrimeNumber {
 	
 	public static void main(String[] args) {
 
+		int i,n=1000;
+		
+		boolean flag=false;
 		
 		
-		boolean flag;
-		
-		
-		for (i=0;i<=13;i++)
+		for (i=2;n%i==0;i++)
 		{
-			i=i%2;
+			flag=true;
+			break;
 			
 		}
-		System.out.println(i);
+			if(flag==true)
+			{
+			System.out.println("Not a prime Numbe="+n);
+			}
+			else
+			{
+				System.out.println("Prime Number="+n);
+			}
+			
+		
+		
 				
 			
 		
@@ -52,11 +63,26 @@ public class PrimeNumber {
 		// Check the flag (Provide a condition)
 		
 			// Print 'Prime' when the condition matches
-			
+	}	
+}
 			// Print 'Not a Prime' when the condition doesn't match 
-			
-		
+	 class prime
+	{
+		public static void main(String[] args)
+		{
+			int temp=0;
+			for(int j=0;j<=10;j++) {
+				temp+=j;
+				System.out.println(temp);
+				
+			}
+		}
 
-	}
+	
 
 }
+
+
+
+
+

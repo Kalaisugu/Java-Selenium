@@ -16,7 +16,7 @@ public class CharacterOccurance {
 		
 		char[] charArray = test.toCharArray();
 		
-		//System.out.println(charArray);
+		System.out.println(charArray);
 		
 		for (int i = 0; i < charArray.length; i++) 
 		{

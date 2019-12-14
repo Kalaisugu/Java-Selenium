@@ -10,9 +10,10 @@ public class PrintDuplicates {
 		// Here is the input
 		int[] data= {1,3,8,3,11,5,6,4,7,6,7};
 		Arrays.sort(data);
-		for (int i = 1; i < data.length-1; i++) {
+		for (int i = 0; i < data.length-1; i++) {
 			//System.out.println(data[i]);
 			int j=data[i+1];
+			System.out.println(j);
 			if(data[i]==j)
 			{
 			

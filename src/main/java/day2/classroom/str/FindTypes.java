@@ -10,6 +10,33 @@ public class FindTypes {
 
 		// Here is what the count you need to find
 		int  letter = 0, space = 0, num = 0, specialChar = 0;
+		
+		char[] charArray=test.toCharArray();
+		
+		//System.out.println(charArray);
+		
+		for (int i=0;i<charArray.length;i++)
+		{
+			if(charArray[i]==' ')
+			{
+				space++;
+			}
+			
+			
+			if(charArray[i]=='$')
+				{
+					specialChar++;
+				}
+			
+				
+			}
+		
+		System.out.println("space: " + space);
+		
+		
+		System.out.println("specialChar: " + specialChar);
+		
+		}
 
 		// Build the logic to find the count of each
 		/* Pseudo Code:
@@ -23,10 +50,10 @@ public class FindTypes {
 		*/
 
 		// Print the count here
-		System.out.println("letter: " + letter);
-		System.out.println("space: " + space);
+		
+		/*System.out.println("space: " + space);
 		System.out.println("number: " + num);
-		System.out.println("specialCharcter: " + specialChar);
+		System.out.println("specialCharcter: " + specialChar);*/
 	}
 
-}
+

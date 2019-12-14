@@ -1,4 +1,4 @@
-package day1.assignments;
+package day1.assignment;
 
 public class ArmstrongNumber {
 	
@@ -21,6 +21,29 @@ public class ArmstrongNumber {
 	 */
 	
 	public static void main(String[] args) {
+		
+		 int calculated=0,remainder,original=156;
+		 
+		 int input=original;
+		
+		
+		
+		while(original>0)
+		{
+			remainder =original%10;
+			input=original/10;
+			calculated=calculated+(remainder*remainder*remainder);
+			
+			if(calculated==original)
+			{
+				System.out.println("Amstrong Number");
+			}
+			else
+			{
+				System.out.println("Not a Amstrong number");
+			}
+			
+		}}}
 		
 		// Declare your input
 		
@@ -56,6 +79,6 @@ public class ArmstrongNumber {
 		
 		
 
-	}
+	
 
-}
+
