@@ -2,6 +2,11 @@ package week2.optional;
 
 
 
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -24,18 +29,15 @@ public class flipkart {
 		
 		WebElement Elec = driver.findElementByXPath("//span[text()='Electronics']");
 		
-		builder.moveToElement(Elec);
+		builder.moveToElement(Elec).perform();
 		
-		//Thread.sleep(2000);
+		driver.findElementByXPath("(//li[@class='_1KCOnI _3ZgIXy']//a)[1]").click();;
 		
-		WebElement mi = driver.findElementByXPath("//a[@title='Mi']");
+		//List<WebElement> count = driver.findElementsByXPath("//div[text()='Redmi 8 (Sapphire Blue, 64 GB)']");
 		
-		builder.click(mi).perform();
+		WebElement firstresult = driver.findElementByXPath("//div[text()='Redmi 8 (Sapphire Blue, 64 GB)']");
 		
-		
-		
-		
-		
+		System.out.println(firstresult.getText());
 		
 		
 		

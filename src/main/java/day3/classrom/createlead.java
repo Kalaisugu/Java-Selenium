@@ -1,11 +1,16 @@
 package day3.classrom;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class createlead {
 	
-	public static void main(String[] args) {
+	@Test
+	
+	public void create() {
 
 		// Set the property for ChromeDriver
            System.setProperty("webdriver.chrome.driver","C:\\Selenium\\Maven\\Drivers\\chromedriver.exe");
@@ -36,6 +41,25 @@ public class createlead {
 		// Click on Leads
           
           driver.findElementByLinkText("Leads").click();
+          
+          driver.findElementByLinkText("Find Leads").click();
+          
+          driver.findElementByXPath("(//input[@name='firstName'])[3]").sendKeys("Sanmitha");
+          
+          driver.findElementByXPath("//button[text()='Find Leads']").click();
+          
+          List<WebElement> elements = driver.findElementsByXPath("(//div[@class='x-grid3-row x-grid3-row-alt'])[1]");
+          
+          for (WebElement webElement : elements) {
+        	  
+        	  String text = webElement.getText();
+        	  
+        	  System.out.println(text);
+			
+		}
+          System.out.println(elements);
+          
+          
 
 		// Click on Create Lead button
           driver.findElementByLinkText("Create Lead").click();
